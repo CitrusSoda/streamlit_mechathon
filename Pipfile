@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-opencv-python = "*"
 tensorflow-cpu = "*"
 streamlit = "*"
 streamlit-drawable-canvas = "*"
 dataclasses = "*"
+opencv-python-headless = "*"
 
 [dev-packages]
 
