@@ -75,7 +75,6 @@ jupyterlab-server==2.0.0
 jupyterlab-widgets==1.0.0
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
-Lasagne @ file:///root/lasagne
 leveldb==0.1
 llvmlite==0.35.0
 lxml==4.6.2
