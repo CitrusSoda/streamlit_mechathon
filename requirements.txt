@@ -25,7 +25,6 @@ cntk-gpu==2.7
 colorama==0.4.4
 confuse==1.4.0
 contextvars==2.4
-cupy==8.3.0
 cycler==0.10.0
 Cython==0.29.21
 dataclasses==0.8
