@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
+import requests
 
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
+from streamlit_lottie import st_lottie
 
 from tensorflow.keras.models import load_model
 
@@ -22,7 +24,18 @@ select = st.sidebar.selectbox(
 
 
 if select == 'Mechathon Introduction':
-    st.write("# Hi it's Mechathon project server")
+    def load_lottieurl(url: str):
+        r = requests.get(url)
+        if r.status_code != 200:
+            return None
+        return r.json()
+
+    lottie_url = "https://assets10.lottiefiles.com/temp/lf20_3bpCnZ.json"
+    lottie_json = load_lottieurl(lottie_url)
+    st_lottie(lottie_json)
+
+    st.markdown("<h1 style='text-align: center;'>Hi This is Mechathon project server</h1>",
+                unsafe_allow_html=True)
 
 if select == 'MNIST':
     # 메인

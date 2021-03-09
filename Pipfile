@@ -9,6 +9,7 @@ streamlit = "*"
 streamlit-drawable-canvas = "*"
 dataclasses = "*"
 opencv-python-headless = "*"
+streamlit-lottie = "*"
 
 [dev-packages]
 
