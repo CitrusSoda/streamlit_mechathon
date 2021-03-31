@@ -5,7 +5,7 @@
 
 사이트 주소 : http://mechaton2.herokuapp.com/
 
-![mechathon](pictures\streamlit.png)
+![mechathon](./pictures/streamlit.png)
 
 #### 추가해야 할 것
 
