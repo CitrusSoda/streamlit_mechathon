@@ -12,7 +12,7 @@ from tensorflow.keras.models import load_model
 # 한번만 로드
 @st.cache(allow_output_mutation=True)
 def load():
-    return load_model('super_mnist.h5')
+    return load_model('model/super_mnist.h5')
 
 
 model = load()
@@ -20,7 +20,7 @@ model = load()
 # 사이드바
 st.sidebar.title("Mechathon")
 select = st.sidebar.selectbox(
-    'Share', ['Mechathon Introduction', 'MNIST'], key='1')
+    'Projects', ['Mechathon Introduction', 'MNIST'], key='1')
 
 
 if select == 'Mechathon Introduction':
